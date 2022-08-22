@@ -1,0 +1,199 @@
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* Start Variables ... */
+:root
+{
+    /* background .... */
+    --Backgrounnd: #0c5177;
+    /* background - box.... */
+    --Backgrounnd-box: #ffffff;
+    /* color  .... */
+    --text-color: #e1effb;
+    /* title  .... */
+    --title-color: #ff6d3a;
+    /* subtitle  .... */
+    --subtitle-color: #ff4c4c;
+    /* margin  */
+    --margin: 1rem;
+    /*padding */
+    --paddind: 1rem;
+}
+
+/* End Variables ... */
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* All Items ... */
+* 
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+ 
+}
+
+body
+{
+    background-color: var(--Backgrounnd);
+    position: relative;
+}
+
+/* Start Main */
+main#player {
+    width: 360px;
+    background-color: var(--subtitle-color);
+    position: absolute;
+    left: 50%;
+    box-Shadow: 2px 3px 21px -13px rgb(145, 146, 157);
+    transform: translatex(-50%);
+
+    
+}
+
+main header 
+{
+    text-align: center;
+    color: var(--text-color);
+    height: 300px;
+}
+
+main header img 
+{
+    margin-top: var(--margin);
+    width: 95px;
+}
+
+main header h2
+{
+    margin: var(--margin) auto;
+}
+
+header P 
+{
+    font-size: 22px;
+
+}
+
+div#content 
+{
+    background-color: var(--Backgrounnd-box);
+}
+
+
+#buttons 
+{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+#buttons img
+{
+    width: 66px;
+    transition: 0.2s;
+    padding: var(--paddind);
+    margin: var(--margin);
+
+    
+}
+
+#buttons img:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#volume
+{
+    text-align: center;
+}
+
+
+#volume input
+{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 0.5rem;
+    
+
+}
+
+input[type="range" i]
+{
+    -webkit-appearance: none;
+    background-color: var(--text-color);
+    height: 4px;
+    margin: 0%;
+
+
+}
+
+input[type="range"]::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    background-color: #ff4c4c;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+
+
+}
+
+#volume h2 
+{
+    margin: 15px 0px;
+
+}
+
+
+#color 
+{
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#color button
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+
+
+}
+
+#color button:hover
+{
+    transform: scale(1.1);
+}
+
+
+#color_1
+{
+
+     background-color: #0c5177;
+}
+
+
+#color_2
+{
+
+     background-color: #e1effb;
+}
+
+
+#color_3
+{
+
+     background-color: #ff6d3a;
+}
+#color_4
+{
+
+     background-color: #000;
+}
+/* End  Main */
